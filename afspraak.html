@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tandartspraktijk Kieskeurig </title>
+    </head>
+    <body>
+        <ul>
+            <h1><b> Tandartspraktijk Kieskeurig</b></h1>
+                <p>Etiam placerat rhoncus ligula nec facilisis. Nunc id auctor neque. Fusce auctor dignissim ligula, et consequat nunc blandit bibendum.<br> 
+                Quisque porttitor id elit lacinia efficitur. Praesent ut porttitor eros. Vivamus congue tortor lacus, at consequat ante molestie at. <br>
+                Sed volutpat elit elit, in pellentesque lacus tincidunt at. Phasellus eget congue nulla.<br>
+                <br>
+                In non neque tempor lectus tincidunt faucibus non varius sem. Donec turpis quam, efficitur vel est at, sagittis imperdiet nisl.<br> 
+                Etiam non metus quam. Vivamus pretium risus diam, vitae aliquam ipsum consectetur nec. Phasellus quis justo at ex interdum dapibus nec non orci.<br> 
+                Fusce quis sapien metus. Quisque efficitur, metus et ornare pellentesque, arcu quam rutrum nisl, eget mattis metus odio eu dolor.<br> 
+                Pellentesque metus nibh, condimentum sed sodales vel, feugiat eu lectus. In aliquet velit et ex euismod finibus. <br>
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sed ipsum finibus,<br> 
+                condimentum quam at, vestibulum nulla. Fusce eu tellus et erat dictum pellentesque in semper eros. Donec eu quam at ligula faucibus vestibulum.<br> 
+                Sed faucibus posuere eleifend. Nulla pretium rutrum ipsum, eu ullamcorper nulla euismod eget. Duis malesuada libero ac neque aliquet hendrerit.<br>
+                <br>
+        </ul>
+            </p>
+            <figure>
+                <img src="afbeelding/Spiegel.jpg"
+                alt="Met spiegel gebid controllen" title=" Met spiegel gebid controllen"
+                width="300" height="200">
+                <img src="afbeelding/cosmetisch.jpg"
+                alt="Tanden Bleken," title="Tanden Bleken"
+                width="300" height="200">
+                <img src="afbeelding/implantaten.jpg"
+                alt="implantaten" title="implantaten"
+                width="300" height="200">
+            </figure>
+        <h1>Afspraakplanner</h1>
+        <form id="Contactform" action="https://formspree.io/f/xoqbgdry" method="POST">
+            <fieldset>
+                <legend>Persoonlijke gegevens</legend><br>
+                <input type="radio" name="geslacht" value="man" checked>Man
+                <input type="radio" name="geslacht" value="vrouw">Vrouw
+                <input type="radio" name="geslacht" value="anders">Anders <br><br>
+                <label for="naam">      Naam:</label>
+                <input type="text" name="naam" placeholder="Uw naam"><br>
+                <label for="adres">Adres:</label>
+                <input type="text" name="adres" placeholder="Adres"><br>
+                <label for="postcode">Postcode:</label>
+                <input type="text" name="postcode" placeholder="Postcode"><br>
+                <label for=" woonplaats">Woonplaats:</label>
+                <input type="text" name="Woonplaats" placeholder="Woonplaats"><br>
+                <label for="Tel.nr">Tel.nr:</label>
+                <input type="text" name="Tel.nr" placeholder="Tel.nr"><br>
+                <label for="eMail">eMail:         </label>
+                <input type="email" name="email" placeholder="Uw mail"><br>
+                
+            </fieldset>
+            <Fieldset>
+                <Legend>Beschrijving van de klachten</Legend><br>
+                <b> Vink aan wat van toepassing is: </b><br>
+                <input type="checkbox" name="onderwerpen" value="Tandvlees">Tandvlees
+                <input type="checkbox" name="onderwerpen" value="Verkleurde/Losse Tanden">Verkleurde/Losse tanden
+                <input              type="checkbox"                 name="onderwerpen"
+                value="Gebroken Kies">Gebroken kies
+                <input type="checkbox" name="onderwerpen" value="Kapot Gebit">Kapot gebit
+                <br><br>
+                <label for="klachtfoto"><b>Selecteer foto van de klacht:</b></label><br>
+                <input type="file" name="foto" value="Klactenfoto"><br><br>
+            </Fieldset>
+            <fieldset>
+                <legend> Toelichting van de klachten</legend><br>
+                <b> Hoe zijn de klachten ontstaan: </b><br>
+                <input type="hidden" name="_subject" value="website contact"/>
+                <b><textarea name="bericht" maxlength="1500"></textarea></b><br><br>
+                <b>Datum ontstaan van de klachten:</b><br>
+                <input type="date" name="datum" max="2080-12-31"><br><br>
+            </fieldset><br>
+            <input type="submit" value="Verzend">
+        </form>
+    </body>
+</html>
